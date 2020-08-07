@@ -9,12 +9,8 @@ Output:CI8
         
 Cocubes Question
 --------
-
-        
 import java.util.*;
-
 public class Main{
-
 public static void main(String[] args) {
 
  //write your code here.
@@ -26,9 +22,7 @@ public static void main(String[] args) {
     System.out.println(result);
  // String s=(char)66+"asdf";
   // System.out.println(s);
-}
-
-   
+} 
    static String DecttoNBase(int n, int b)
    {
    String ans="";
