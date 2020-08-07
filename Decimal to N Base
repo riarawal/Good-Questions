@@ -7,9 +7,10 @@ input: =21
         5678
 Output:CI8        
         
+Cocubes Question
+--------
 
-
-
+        
 import java.util.*;
 
 public class Main{
