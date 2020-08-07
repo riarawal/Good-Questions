@@ -1,0 +1,49 @@
+Decimal to N Base
+input: 12
+       178
+output:4BA       
+       
+input: =21
+        5678
+Output:CI8        
+        
+
+
+
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+
+ //write your code here.
+   Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int b=sc.nextInt();
+   
+  String result=DecttoNBase(n,b);*/
+    System.out.println(result);
+ // String s=(char)66+"asdf";
+  // System.out.println(s);
+}
+
+   
+   static String DecttoNBase(int n, int b)
+   {
+   String ans="";
+   int rem=0;
+   
+   while(n!=0)
+   {
+       rem=n%b;
+       if(rem>9)ans+=(char)65+ans;
+       else{
+         ans=rem+ans;  
+       }
+       n=n/b;
+       
+   }
+   System.out.println()
+   return ans;
+ }
+}
