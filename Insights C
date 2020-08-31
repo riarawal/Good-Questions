@@ -1,0 +1,54 @@
+y=5; z=10;
+x= y+y==z;
+output: 1
+Double = more priority, returns 0 or 1.
+
+------
+
+getchar()
+takes unsigned char input gives Output as int bcoz of EOF.
+
+-------
+
+int main(void)  
+{ 
+   int x = printf("GeeksQuiz"); 
+   printf("%d", x); 
+   return 0; 
+} 
+output: GeeksQuiz9 //9 characters 
+
+----
+
+scanf("%4s", str); //Read maximum 4 characters from console.
+
+-------
+
+printf("%c ", "GeeksQuiz"[5]);  //Q
+
+----
+
+printf("%d", printf("%d", 1234)); // 12344 Last is for number of characters
+
+---
+ printf("%c ", 5["GeeksQuiz"]); // Q
+ 
+ --
+ printf(5 + "GeeksQuiz"); // It will print from 5th position, So output: Quiz
+----
+
+ printf(" \"GEEKS %% FOR %% GEEKS\"");  
+ “GEEKS % FOR % GEEKS” //Logic: / slash se double quote ata h , aur  %% se ek baar % print ho jata h
+ 
+ ----
+ char *s = "Geeks Quiz"; 
+    int n = 7; 
+    printf("%.*s", n, s); 
+    return 0;  //Geeks Q  special format upto 7
+    
+----
+
+gets() doesn’t do any array bound testing and should not be used. See gets() is risky to use!
+-----
+
+ 
