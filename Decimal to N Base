@@ -50,3 +50,47 @@ public static void main(String[] args) {
    return ans;
  }
 }
+
+
+----------
+
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+
+ //write your code here.
+   Scanner sc=new Scanner(System.in);
+   int num=sc.nextInt();
+   int n=sc.nextInt();
+   
+   String result=DecttoNBase(num,n);
+   System.out.println(result);
+ //String s=(char)66+"asdf";
+ // System.out.println(s);
+}
+
+   
+  static String DecttoNBase(int num, int n)
+   {
+     String ans="";
+     int rem=0;
+     
+     while(num!=0)
+     {
+         rem=num%n;
+         if(rem>9)
+         {
+             rem=rem-10;
+             rem+=65;
+             ans=(char)rem+ans;
+         }
+         else{
+             ans=rem+ans;
+         }
+         num=num/n;
+     }
+     return ans;
+   }
+}
