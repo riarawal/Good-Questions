@@ -57,3 +57,48 @@ public static void main(String[] args) {
     } 
 
 }
+
+
+---------
+
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+
+ //write your code here.
+   Scanner sc=new Scanner(System.in);
+   String num=sc.nextLine();
+  // int n=sc.nextInt();
+   
+  
+   System.out.println( findSmallestPermutation(num));
+ //String s=(char)66+"asdf";
+ // System.out.println(s);
+}
+
+   
+ // static String DecttoNBase(int num, int n)
+  // {
+     static char[] findSmallestPermutation(String s1) 
+    { 
+        // sort the string 
+        char s[] = s1.toCharArray(); 
+        Arrays.sort(s); 
+       
+        // check for leading zero in string 
+        // if there are any leading zeroes, 
+        // swap the first zero with first non-zero 
+        // number 
+        int i = 0; 
+        while (s[i] == '0')  
+            i++; 
+           
+        char temp = s[0]; 
+        s[0] = s[i]; 
+        s[i] = temp; 
+        return s; 
+    
+   }
+}
