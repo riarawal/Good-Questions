@@ -1,0 +1,32 @@
+// Java program to demonstrate the 
+// conversion of a char[] array 
+// to a string 
+  
+public class GFG { 
+  
+    // Function to convert a character 
+    // array to a string using the 
+    // constructor 
+    public static String toString(char[] a) 
+    { 
+        String string = new String(a); 
+        return string; 
+    } 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+  
+        // Character array 
+        char s[] = { 'g', 'e', 'e', 'k', 
+                     's', 'f', 'o', 'r', 
+                     'g', 'e', 'e', 'k', 's' }; 
+  
+        // Print final output of char arr[]->string 
+        System.out.println(toString(s)); 
+    } 
+} 
+-------
+
+ char s[] = s1.toCharArray(); 
+
