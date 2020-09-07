@@ -1,0 +1,50 @@
+input: 3
+1
+-1
+0
+0
+
+output:1
+
+
+----------
+
+import java.util.*;
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+
+ //write your code here.
+   Scanner sc=new Scanner(System.in);
+   int i1=sc.nextInt();
+   //String t=sc.nextLine();
+   int[] i3=new int[i1];
+   int i2=sc.nextInt();
+   for (int j = 0 ; j <i1 ; j++) 
+  {
+    i3[j]=sc.nextInt();
+  }
+   int count=0;
+   // Arrays.sort(i3);
+  for(int i=0;i<i3.length;i++)
+  {
+ 
+ 
+  if(i==i3.length-1)
+  {   
+      if(i3[i]+1==i && i>=i2 )count++;
+      
+  }
+  if(i<i3.length-1 )
+      {
+          if(i3[i]+1==i && i>=i2)count++;
+      }
+  }
+      System.out.println( count);
+      
+    
+    } 
+}
+       
