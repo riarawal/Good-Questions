@@ -84,5 +84,45 @@ public static void main(String[] args) {
     
     } 
 }
+
+----------
+
+import java.util.*;
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+
+ //write your code here.
+   Scanner sc=new Scanner(System.in);
+   int i1=sc.nextInt();
+   //String t=sc.nextLine();
+   int[] i3=new int[i1];
+   int i2=sc.nextInt();
+   for (int j = 0 ; j <i1 ; j++) 
+  {
+    i3[j]=sc.nextInt();
+  }
+  Arrays.sort(i3);
+  int sum=0;
+  int count=0;
+ if(i3.length>=i2)
+ {
+ for(int i=i3.length-1;i>=i3.length-i2;i--)
+ {   sum+=i3[i];
+ }}
+ else{
+     for(int i=i3.length-1;i>=0;i--)
+ {   sum+=i3[i];
+ }
+ }
+   
+ System.out.println(sum);
+      
+    
+    } 
+}
+       
        
        
