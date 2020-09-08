@@ -56,3 +56,34 @@ public static void main(String[] args) {
 }
 }
 --------
+
+Same reflection: Right Rotate
+
+input: abc
+       cab
+output: 1
+
+
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+
+ //write your code here.
+   Scanner sc=new Scanner(System.in);
+   String s1=sc.nextLine();
+   String s2=sc.nextLine();
+   
+   String ss=s1.substring(s1.length()-1) + s1.substring(0,s1.length()-1);
+   
+   if(ss.equals(s2))System.out.println("1");
+   else{
+       System.out.println("-1");
+   }
+   
+}
+}
+
+---------
+
