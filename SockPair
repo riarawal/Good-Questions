@@ -1,5 +1,37 @@
-import java.util.*;
+Pair of Socks
+There are A red socks, B green socks and C Yellow socks in a dark room. Ashwin wants to find N
+pairs of matching colored socks from the dark room.
+Given all A, B and C are even and N ≤ (A+B+C)/2, write a program that outputs how many socks
+Ashwin would have to draw from the dark room in the worst case, to have exactly N pairs.
+1. Input Format
+First line contains three space separated integers: A, B and C.
+Second line contains the number of pairs Ashwin wants: N.
+2. Output Format
+Single line containing a single integer which is the count of socks needed to draw in the worst case
+3. Constraints
+0 ≤ A,B,C ≤ 106
+0 ≤ N ≤ (A + B + C)/2
+4. Example
+Input 1:
+2 4 4
+1
+Output 1:
+4
+Input 2:
+2 4 4
+4
+Output 2:
+9
+Input 3:
+2 4 4
+5
+Output 3:
+10
 
+
+--------------
+
+import java.util.*;
 public class PairSocks {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
