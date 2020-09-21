@@ -1,0 +1,62 @@
+Mapup.ai
+
+input:
+4
+2 1 1 2
+
+output:
+3
+0 3
+----------
+input:
+4
+3 1 4 2
+
+output:
+2
+0 2
+--------
+import java.util.*;
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+
+ //write your code here.
+ 
+        Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         int[] a=new int[n];
+         for(int i=0;i<n;i++)
+         {
+             a[i]=sc.nextInt();
+         }
+         
+         int maxp1=Integer.MIN_VALUE;
+         int j1=0;
+        // int max=0;
+         int i1=0;
+         //int maxp1=0;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(a[i]<=a[j] && maxp1<j-i)
+                {   
+                    //max=a[j]-a[i];
+                   
+                    maxp1=j-i;
+                    j1=j;
+                    i1=i;
+                    
+                    
+                }
+            }
+        }
+        System.out.println(maxp1);
+        System.out.print(i1+" " +j1);
+        
+       
+     }
+}
