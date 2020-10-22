@@ -8,3 +8,7 @@ public static void main(String[] args) {
    System.out.println(s);
 }
 }
+
+(char)3 - Integer to character
+'f'-'0'- Character to integer
+Character.toString('c')- Character to string
