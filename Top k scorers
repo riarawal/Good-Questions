@@ -27,9 +27,10 @@ public static void main(String[] args) {
  //write your code here.
    Scanner sc=new Scanner(System.in);
    int i1=sc.nextInt();
+   int i2=sc.nextInt();
    //String t=sc.nextLine();
    int[] i3=new int[i1];
-   int i2=sc.nextInt();
+   
    for (int j = 0 ; j <i1 ; j++) 
   {
     i3[j]=sc.nextInt();
@@ -64,9 +65,10 @@ public static void main(String[] args) {
  //write your code here.
    Scanner sc=new Scanner(System.in);
    int i1=sc.nextInt();
+   int i2=sc.nextInt();
    //String t=sc.nextLine();
    int[] i3=new int[i1];
-   int i2=sc.nextInt();
+   
    for (int j = 0 ; j <i1 ; j++) 
   {
     i3[j]=sc.nextInt();
@@ -97,9 +99,10 @@ public static void main(String[] args) {
  //write your code here.
    Scanner sc=new Scanner(System.in);
    int i1=sc.nextInt();
+   int i2=sc.nextInt();
    //String t=sc.nextLine();
    int[] i3=new int[i1];
-   int i2=sc.nextInt();
+   
    for (int j = 0 ; j <i1 ; j++) 
   {
     i3[j]=sc.nextInt();
